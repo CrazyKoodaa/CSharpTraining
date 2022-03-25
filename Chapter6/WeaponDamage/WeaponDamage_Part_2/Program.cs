@@ -11,7 +11,7 @@ namespace WeaponDamage_Part_2
             SwordDamage swordDamage = new SwordDamage(RollDice(3));
             ArrowDamage arrowDamage = new ArrowDamage(RollDice(1));
                                                                                                                                                          
-            while (true)
+            while (true)  
             {
                 Console.Write("0 for no magic/flaming, 1 for magic, 2 for flaming, " +
                                 "3 for both, anything else to quit: ");
