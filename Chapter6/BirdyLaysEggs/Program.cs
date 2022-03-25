@@ -2,6 +2,16 @@
 // headfirst 297
 namespace BirdyLaysEggs
 {
+    internal class BrokenEgg : Egg
+    {
+        /* The subclass constructor can have any number of parameters, and it can even be parameterless. 
+         * It just needs to use the base keyword to pass the correct number of arguments to the base class constructor
+         */
+        public BrokenEgg(string color) : base(0, $"broken {color}")
+        {
+            Console.WriteLine("A bird laid a broken egg");
+        }
+    }
     class Egg
     {
         public double Size { get; private set; }
@@ -35,11 +45,16 @@ namespace BirdyLaysEggs
             Egg[] eggs = new Egg[numberOfEggs];
             for (int i = 0; i < numberOfEggs; i++)
             {
-                eggs[i] = new Egg(Bird.Randomizer.NextDouble() * 2 + 1, "white");
+                if (Bird.Randomizer.Next(4) == 0)
+                    eggs[i] = new BrokenEgg("white");
+                else
+                    eggs[i] = new Egg(Bird.Randomizer.NextDouble() * 2 + 1, "white");
             }
             return eggs;
         }
     }
+
+
     class Ostrich : Bird
     {
         public override Egg[] LayEggs(int numberOfEggs)
