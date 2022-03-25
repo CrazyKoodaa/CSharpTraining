@@ -39,7 +39,7 @@ namespace MySafe
         }
         public string Combination { private get; set; }
 
-        protected void ReturnContents(string safeContents, SafeOwner owner)
+        protected virtual void ReturnContents(string safeContents, SafeOwner owner)
         {
             owner.ReceiveContents(safeContents);
         }
@@ -48,7 +48,7 @@ namespace MySafe
     class JewelThief : Locksmith
     {
         private string stolenJewels;
-        protected new void ReturnContents(string safeContents, SafeOwner owner)
+        protected override void ReturnContents(string safeContents, SafeOwner owner)
         {
             stolenJewels = safeContents;
             Console.WriteLine($"I'm stealing the jewels! I stole: {stolenJewels}"   );
@@ -70,16 +70,17 @@ namespace MySafe
              * 
              * Declaring your JewelThief object as a Locksmith reference causes it to 
              * call the base class ReutrnContents() methog
-             */
-            Locksmith calledAsLocksmith = new JewelThief();
-            calledAsLocksmith.ReturnContents(safeContents, owner);
-
-            /* Declaring your JewelThief object as a JewelThief reference causes it to
+             *
+             * Locksmith calledAsLocksmith = new JewelThief();
+             * calledAsLocksmith.ReturnContents(safeContents, owner);
+             *
+             * Declaring your JewelThief object as a JewelThief reference causes it to
              * call JuwelThief's ReturnContents() method instead, because it hides
              * the base class's method of the same name.
+             *
+             * JewelThief calledAsJewelThief = new JewelThief();
+             * calledAsJewelThief.ReturnContents(safeContents, owner);
              */
-            JewelThief calledAsJewelThief = new JewelThief();
-            calledAsJewelThief.ReturnContents(safeContents, owner);
 
 
             Console.ReadKey(true);
