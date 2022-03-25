@@ -37,9 +37,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeaponDamage_Part_2", "..\.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirdyLaysEggs", "..\..\Chapter6\BirdyLaysEggs\BirdyLaysEggs.csproj", "{9A40BD51-765F-4C49-936F-E6338F999A94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendingMachines", "..\..\Chapter6\VendingMachines\VendingMachines.csproj", "{A075CB8A-2379-4ECD-9D3A-5F0BB75EFF67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VendingMachines", "..\..\Chapter6\VendingMachines\VendingMachines.csproj", "{A075CB8A-2379-4ECD-9D3A-5F0BB75EFF67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySafe", "..\..\Chapter6\MySafe\MySafe.csproj", "{D8BB7A9A-A823-4126-83C9-FABB2ADF8428}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySafe", "..\..\Chapter6\MySafe\MySafe.csproj", "{D8BB7A9A-A823-4126-83C9-FABB2ADF8428}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "animalSimulator", "..\..\Chapter6\animalSimulator\animalSimulator.csproj", "{EC2A8D23-B96B-4EC6-A64B-91B989961E82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{D8BB7A9A-A823-4126-83C9-FABB2ADF8428}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8BB7A9A-A823-4126-83C9-FABB2ADF8428}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8BB7A9A-A823-4126-83C9-FABB2ADF8428}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC2A8D23-B96B-4EC6-A64B-91B989961E82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC2A8D23-B96B-4EC6-A64B-91B989961E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC2A8D23-B96B-4EC6-A64B-91B989961E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC2A8D23-B96B-4EC6-A64B-91B989961E82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
