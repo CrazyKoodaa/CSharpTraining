@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayingAroundWithInterfaces
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessMethodInSubclassWithIS", "..\..\Chapter7\AccessMethodInSubclassWithIS\AccessMethodInSubclassWithIS.csproj", "{C1B7D2C1-0F8E-4FF7-BB44-E4357A86E18A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayingAroundWithInterfacesInheritance", "..\..\Chapter7\PlayingAroundWithInterfacesInheritance\PlayingAroundWithInterfacesInheritance.csproj", "{C51F6AED-D061-4A01-BAD6-48E51D6A8475}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{C1B7D2C1-0F8E-4FF7-BB44-E4357A86E18A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1B7D2C1-0F8E-4FF7-BB44-E4357A86E18A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1B7D2C1-0F8E-4FF7-BB44-E4357A86E18A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C51F6AED-D061-4A01-BAD6-48E51D6A8475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C51F6AED-D061-4A01-BAD6-48E51D6A8475}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C51F6AED-D061-4A01-BAD6-48E51D6A8475}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C51F6AED-D061-4A01-BAD6-48E51D6A8475}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
