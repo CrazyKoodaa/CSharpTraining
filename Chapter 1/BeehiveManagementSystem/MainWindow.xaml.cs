@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -67,7 +68,7 @@ namespace BeehiveManagementSystem
         }
     }
 
-    class Queen : Bee
+    class Queen : Bee, INotifyPropertyChanged
     {
         public const float EGGS_PER_SHIFT = 0.45f;
         public const float HONEY_PER_UNASSIGNED_WORKER = 0.5f;
@@ -75,6 +76,12 @@ namespace BeehiveManagementSystem
         private IWorker[] workers = new IWorker[0];
         private float eggs = 0;
         private float unassignedWorkers = 3;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChanged(string name)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+        }
 
         public string StatusReport { get; private set; }
         public override float CostPerShift => 2.15f;
@@ -104,6 +111,7 @@ namespace BeehiveManagementSystem
             StatusReport += $"{WorkerStatus("Honey Manufacturer")}";
             StatusReport += $"\n{WorkerStatus("Egg Care")}\n";
             StatusReport += $"TOTAL WORKERS: {workers.Length}";
+            OnPropertyChanged("StatusReport");
         }
 
         public void CareForEggs(float eggsToConvert)
@@ -152,7 +160,7 @@ namespace BeehiveManagementSystem
         public const float CARE_PROGRESS_PER_SHIFT = 0.15f;
         public override float CostPerShift => 1.35f;
 
-        private Queen queen;
+        private readonly Queen queen;
         public EggCare(Queen queen) : base("Egg Care")
         {
             this.queen = queen;
@@ -213,12 +221,14 @@ namespace BeehiveManagementSystem
     }
     public partial class MainWindow : Window
     {
-        private Queen queen = new Queen();
+        //private Queen queen = new Queen();
+        private readonly Queen queen;
         private DispatcherTimer timer = new DispatcherTimer();
         public MainWindow()
         {
             InitializeComponent();
-            statusReport.Text = queen.StatusReport;
+            queen = Resources["queen"] as Queen;
+            //statusReport.Text = queen.StatusReport;
             timer.Tick += Timer_Tick;
             timer.Interval = TimeSpan.FromSeconds(1.5);
             timer.Start();
@@ -232,14 +242,14 @@ namespace BeehiveManagementSystem
         private void WorkShift_Click(object sender, RoutedEventArgs e)
         {
             queen.WorkTheNextShift();
-            statusReport.Text = queen.StatusReport;
+            //statusReport.Text = queen.StatusReport;
         }
 
 
         private void AssignJob_Click(object sender, RoutedEventArgs e) 
         { 
             queen.AssignBee(jobSelector.Text);
-            statusReport.Text = queen.StatusReport;
+            //statusReport.Text = queen.StatusReport;
         }
     }
 }
