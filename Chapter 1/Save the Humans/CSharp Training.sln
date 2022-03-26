@@ -45,6 +45,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "animalSimulator", "..\..\Ch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissionPlanet", "..\..\Chapter6\MissionPlanet\MissionPlanet.csproj", "{272C0F25-48A3-4BD9-975D-76A846AD4E39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayingAroundWithInterfaces", "..\..\Chapter7\PlayingAroundWithInterfaces\PlayingAroundWithInterfaces.csproj", "{3A259E55-54F7-4BCA-B6E4-387FF76273F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{272C0F25-48A3-4BD9-975D-76A846AD4E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{272C0F25-48A3-4BD9-975D-76A846AD4E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{272C0F25-48A3-4BD9-975D-76A846AD4E39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A259E55-54F7-4BCA-B6E4-387FF76273F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A259E55-54F7-4BCA-B6E4-387FF76273F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A259E55-54F7-4BCA-B6E4-387FF76273F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A259E55-54F7-4BCA-B6E4-387FF76273F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
