@@ -20,7 +20,7 @@ using System.Windows.Threading;
 
 namespace BeehiveManagementSystem
 {
-    public abstract class Bee
+    public abstract class Bee : IWorker
     {
         public string Job { get; private set; }
         public abstract float CostPerShift { get; }
@@ -72,7 +72,7 @@ namespace BeehiveManagementSystem
         public const float EGGS_PER_SHIFT = 0.45f;
         public const float HONEY_PER_UNASSIGNED_WORKER = 0.5f;
 
-        private Bee[] workers = new Bee[0];
+        private IWorker[] workers = new IWorker[0];
         private float eggs = 0;
         private float unassignedWorkers = 3;
 
@@ -85,7 +85,7 @@ namespace BeehiveManagementSystem
             AssignBee("Egg Care");
         }
 
-        private void AddWorker(Bee worker)
+        private void AddWorker(IWorker worker)
         {
             if (unassignedWorkers >= 1)
             {
@@ -118,7 +118,7 @@ namespace BeehiveManagementSystem
         private string WorkerStatus(string job)
         {
             int count = 0;
-            foreach (Bee worker in workers)
+            foreach (IWorker worker in workers)
                 if (worker.Job == job) count++;
             string s = "(s)";
             if (count == 1) s = "";
@@ -139,14 +139,14 @@ namespace BeehiveManagementSystem
         protected override void DoJob()
         {
             eggs += EGGS_PER_SHIFT;
-            foreach (Bee worker in workers)
+            foreach (IWorker worker in workers)
                 worker.WorkTheNextShift();
             HoneyVault.ConsumeHoney(unassignedWorkers * HONEY_PER_UNASSIGNED_WORKER);
             UpdateStatusReport();
         }
 
     }
-
+       
     class EggCare : Bee
     {
         public const float CARE_PROGRESS_PER_SHIFT = 0.15f;
