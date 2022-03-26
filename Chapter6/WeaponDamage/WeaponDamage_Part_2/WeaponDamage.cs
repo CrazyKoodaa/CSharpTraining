@@ -39,7 +39,7 @@ namespace WeaponDamage_Part_2
                 flaming = value;
                 CalculateDamage();
             }
-        }
+        }   
 
         protected abstract void CalculateDamage();
 

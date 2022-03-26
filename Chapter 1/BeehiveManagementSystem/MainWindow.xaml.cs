@@ -16,11 +16,6 @@ using System.Windows.Shapes;
 using System.Windows.Threading;
 
 
-// HeadFirst - Page 240 next
-241
-    242
-    243
-
 
 
 namespace BeehiveManagementSystem
@@ -46,7 +41,7 @@ namespace BeehiveManagementSystem
         
 
     }
-
+                         
     class NectarCollector : Bee
     {
 

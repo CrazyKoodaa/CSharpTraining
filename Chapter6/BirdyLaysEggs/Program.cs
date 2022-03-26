@@ -27,10 +27,10 @@ namespace BirdyLaysEggs
         }
     }
 
-    class Bird
+    abstract class Bird
     {
         public static Random Randomizer = new Random();
-        public virtual Egg[] LayEggs(int numberOfEggs)
+        public abstract virtual Egg[] LayEggs(int numberOfEggs)
         {
             Console.Error.WriteLine("Bird.LayEggs should never get called");
             return new Egg[0];
@@ -74,6 +74,7 @@ namespace BirdyLaysEggs
             while (true)
             {
                 Bird bird;
+                Bird abstractBird = new Bird();
                 Console.WriteLine("\nPress P for pigeon, O for ostrich: ");
                 char key = Char.ToUpper(Console.ReadKey().KeyChar);
                 switch (key)
