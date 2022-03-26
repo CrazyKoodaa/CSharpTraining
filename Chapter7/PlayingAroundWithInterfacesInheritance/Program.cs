@@ -39,10 +39,14 @@ namespace PlayingAroundWithInterfacesInheritance
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            IClown.CarCapacity = 8;
+            Console.WriteLine(IClown.ClownCarDescription());
             IClown fingersTheClown = new ScaryScary("bug red nose", 14);
             fingersTheClown.Honk();
             if (fingersTheClown is IScaryClown iScaryClownReference)
-                iScaryClownReference.ScareLitteChildren();
+                iScaryClownReference.ScareAdults();
+            
+           
         }
     }
 }
