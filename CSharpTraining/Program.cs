@@ -42,6 +42,9 @@ namespace CSharpTraining
              * @"bla \n {test} 
              * bla2"            = bla \n {test}
              *                    bla2
+             *                    
+             * you can also combine $@"...." like this
+             *       
         }
     }
 }

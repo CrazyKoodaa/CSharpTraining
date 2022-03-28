@@ -43,13 +43,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySafe", "..\..\Chapter6\My
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "animalSimulator", "..\..\Chapter6\animalSimulator\animalSimulator.csproj", "{EC2A8D23-B96B-4EC6-A64B-91B989961E82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissionPlanet", "..\..\Chapter6\MissionPlanet\MissionPlanet.csproj", "{272C0F25-48A3-4BD9-975D-76A846AD4E39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MissionPlanet", "..\..\Chapter6\MissionPlanet\MissionPlanet.csproj", "{272C0F25-48A3-4BD9-975D-76A846AD4E39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayingAroundWithInterfaces", "..\..\Chapter7\PlayingAroundWithInterfaces\PlayingAroundWithInterfaces.csproj", "{3A259E55-54F7-4BCA-B6E4-387FF76273F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayingAroundWithInterfaces", "..\..\Chapter7\PlayingAroundWithInterfaces\PlayingAroundWithInterfaces.csproj", "{3A259E55-54F7-4BCA-B6E4-387FF76273F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessMethodInSubclassWithIS", "..\..\Chapter7\AccessMethodInSubclassWithIS\AccessMethodInSubclassWithIS.csproj", "{C1B7D2C1-0F8E-4FF7-BB44-E4357A86E18A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccessMethodInSubclassWithIS", "..\..\Chapter7\AccessMethodInSubclassWithIS\AccessMethodInSubclassWithIS.csproj", "{C1B7D2C1-0F8E-4FF7-BB44-E4357A86E18A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayingAroundWithInterfacesInheritance", "..\..\Chapter7\PlayingAroundWithInterfacesInheritance\PlayingAroundWithInterfacesInheritance.csproj", "{C51F6AED-D061-4A01-BAD6-48E51D6A8475}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayingAroundWithInterfacesInheritance", "..\..\Chapter7\PlayingAroundWithInterfacesInheritance\PlayingAroundWithInterfacesInheritance.csproj", "{C51F6AED-D061-4A01-BAD6-48E51D6A8475}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayingWithCards", "..\..\Chapter8\PlayingWithCards\PlayingWithCards.csproj", "{185CA543-E472-4D4D-B340-603E43338931}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +155,10 @@ Global
 		{C51F6AED-D061-4A01-BAD6-48E51D6A8475}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C51F6AED-D061-4A01-BAD6-48E51D6A8475}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C51F6AED-D061-4A01-BAD6-48E51D6A8475}.Release|Any CPU.Build.0 = Release|Any CPU
+		{185CA543-E472-4D4D-B340-603E43338931}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{185CA543-E472-4D4D-B340-603E43338931}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{185CA543-E472-4D4D-B340-603E43338931}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{185CA543-E472-4D4D-B340-603E43338931}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
