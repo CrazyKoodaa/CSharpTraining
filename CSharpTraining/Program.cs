@@ -44,7 +44,19 @@ namespace CSharpTraining
              *                    bla2
              *                    
              * you can also combine $@"...." like this
-             *       
+             * 
+             * list<T> => T is just a letter to represent all other declarations Types like int, shoes, or whatever. Therefore its generic
+             * list.add to add
+             * list.remove to remove
+             * list.removeat to remove item at index 
+             * list.contains() to find an item in list
+             * list.contains().IndexOf() to get the index of the found list
+             * list.count counts the items in a list
+             * list[3] access the item at index 3
+             * foreach list is possible
+             * All generic collections impleent the generic ICollection<T> interface
+             * The <T> i a generic class r interace definition is replaced with a type when you instantiate it.
+             *                      
         }
     }
 }
