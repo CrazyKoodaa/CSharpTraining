@@ -24,14 +24,19 @@ namespace duckyduck
     {
         public int Size { get; set; }
         public KindOfDuck Kind { get; set; }
+        public override string ToString()
+        {
+            return $"A {Size} inch {Kind}";
+        }
 
         public static void PrintDucks(List<Duck> ducks)
         {
             foreach (Duck duck in ducks)
-                Console.WriteLine($"{duck.Size} inch {duck.Kind}");
+                Console.WriteLine(duck);
+                //Console.WriteLine($"{duck.Size} inch {duck.Kind}");
             Console.WriteLine();
         }
-
+         
         public int Compare(Duck x, Duck y)
         {
             if (x.Size < y.Size) return -1;
@@ -107,10 +112,10 @@ namespace duckyduck
                 }
             }
         }
+            
     }
     internal class Program
     {
-        
 
         static void Main()
         {
