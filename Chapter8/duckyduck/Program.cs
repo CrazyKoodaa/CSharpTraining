@@ -132,6 +132,25 @@ namespace duckyduck
             };
 
             Duck.PrintDucks(ducks);
+
+            ducks.GetEnumerator(); 
+
+
+            // The next few lines are almost like *
+            IEnumerator<Duck> enumerator = ducks.GetEnumerator();
+            while (enumerator.MoveNext())
+            {
+                Duck duck = enumerator.Current;
+                Console.WriteLine(duck);
+            }
+            if (enumerator is IDisposable disposable) disposable.Dispose();
+
+            // * this foreach loop
+            foreach (var duck in ducks)
+            {
+                Console.WriteLine(duck);
+            }
+            
             DuckComparer comparer = new DuckComparer();
             comparer.SortBy = SortCriteria.KindThenSize;
             ducks.Sort(comparer);
