@@ -69,7 +69,10 @@ namespace CSharpTraining
              * The default ToString method is inherited from Object. It returns the fully qualified class name, or the namespace followed by a period followed by the class name.
              * Override the ToString method to get interpolation, concatenation and many other operations to use a custom string
              *                      
-             *                      
+             * foreach works with queue, stack and list because they all have the Interface IEnumerable<T>
+             * CoVariance is C# way of letting you implicitly convert a subcass reference to its superclass
+             * The word "implicitly" refers to C#s ability to figure out how to do the conversion without you needing to explicitly use casting
+             * 
              *                      
              */
         }
