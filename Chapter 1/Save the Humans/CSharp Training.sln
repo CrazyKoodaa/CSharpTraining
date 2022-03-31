@@ -65,6 +65,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dictionaryRetiredPlayer", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "queueFirstInFirstOut", "..\..\Chapter8\queueFirstInFirstOut\queueFirstInFirstOut.csproj", "{88B9B331-21D2-4322-A178-2B6B9E3C06ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stackLastInFirstOut", "..\..\Chapter8\stackLastInFirstOut\stackLastInFirstOut.csproj", "{3D26A971-41A8-4E80-AA25-7F8DD0BB0300}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +197,10 @@ Global
 		{88B9B331-21D2-4322-A178-2B6B9E3C06ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88B9B331-21D2-4322-A178-2B6B9E3C06ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88B9B331-21D2-4322-A178-2B6B9E3C06ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D26A971-41A8-4E80-AA25-7F8DD0BB0300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D26A971-41A8-4E80-AA25-7F8DD0BB0300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D26A971-41A8-4E80-AA25-7F8DD0BB0300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D26A971-41A8-4E80-AA25-7F8DD0BB0300}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
