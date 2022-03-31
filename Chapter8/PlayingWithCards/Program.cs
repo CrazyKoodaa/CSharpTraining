@@ -34,6 +34,11 @@ namespace PlayingWithCards
             this.Suit = suit;
         }*/
 
+        public override string ToString()
+        {
+            return Name;
+        }
+
         public Card RandomCard()
         {
             int tValue = random.Next(1, 14);
@@ -44,7 +49,7 @@ namespace PlayingWithCards
         public void PrintCards(List<Card> _cards)
         {
             for (int i = 0; i < _cards.Count; i++)
-                Console.WriteLine(_cards[i].Name);
+                Console.WriteLine(_cards[i]);
         }
     }
 

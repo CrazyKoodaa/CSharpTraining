@@ -1,5 +1,7 @@
 ﻿using System;
 
+// head first 439
+
 namespace CSharpTraining
 {
     internal class Program
@@ -57,6 +59,19 @@ namespace CSharpTraining
              * All generic collections impleent the generic ICollection<T> interface
              * The <T> i a generic class r interace definition is replaced with a type when you instantiate it.
              *                      
+             * Collection initializers let you specify the contents of a List<T> or other collection when you create it, using angle brackets with a comma-separated list of objects.
+             * A collection initializer makes your code more compact by letting you combine list creation with addning an inital set of items
+             * The List.Sort method sorts the contents of the collection, changing the order of the items it contains
+             * The ICoparable<T> interface contains a single method, CompareTo, which List.Sort uses to determine the order of objects to sort.
+             * The Sort method has an overload that takes an IComparer<T> object, which it will then use for sorting
+             * IComparable.CompareTo and IComparer.Compare both compare pairs of objects, returning -1 if the first object is less than the second, 1 if the first is greater than the second or 0 if they're equal
+             * Every Object has a ToString method that converts it to a string. The ToString method is called any time you use string interpolation or concatenation
+             * The default ToString method is inherited from Object. It returns the fully qualified class name, or the namespace followed by a period followed by the class name.
+             * Override the ToString method to get interpolation, concatenation and many other operations to use a custom string
+             *                      
+             *                      
+             *                      
+             */
         }
     }
 }
